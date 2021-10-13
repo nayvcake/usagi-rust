@@ -1,52 +1,59 @@
 use crate::http::client::create_request;
 
+
+// API Client
 pub mod http;
 
-pub fn dance() -> Option<&String> {
-    return create_request("dance").unwrap().get("url");
+pub fn dance() -> String {
+    return create_request("dance").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn feed() -> Option<&String> {
-    return create_request("feed").unwrap().get("url");
+pub fn feed() -> String {
+    return create_request("feed").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn kiss() -> Option<&String> {
-    return create_request("kiss").unwrap().get("url");
+pub fn hug() -> String {
+    return create_request("hug").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn pat() -> Option<&String> {
-    return create_request("pat").unwrap().get("url");
+pub fn kiss() -> String {
+    return create_request("kiss").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn poke() -> Option<&String> {
-    return create_request("poke").unwrap().get("url");
+pub fn pat() -> String {
+    return create_request("pat").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn slap() -> Option<&String> {
-    return create_request("slap").unwrap().get("url");
+pub fn poke() -> String {
+    return create_request("poke").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn tickle() -> Option<&String> {
-    return create_request("tickle").unwrap().get("url");
+pub fn slap() -> String {
+    return create_request("slap").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn bite() -> Option<&String> {
-    return create_request("bite").unwrap().get("url");
+pub fn tickle() -> String {
+    return create_request("tickle").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn bowdown() -> Option<&String> {
-    return create_request("bowdown").unwrap().get("url");
+pub fn bite() -> String {
+    return create_request("bite").unwrap().get("url").unwrap().to_string();
 }
 
 
-pub fn wasted() -> Option<&String> {
-    return create_request("wasted").unwrap().get("url");
+pub fn bowdown() -> String {
+    return create_request("bowdown").unwrap().get("url").unwrap().to_string();
+}
+
+
+pub fn wasted() -> String {
+    return create_request("wasted").unwrap().get("url").unwrap().to_string();
 }
